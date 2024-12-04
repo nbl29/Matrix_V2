@@ -34,6 +34,24 @@ cd Matrix_V2
 pip install -r requirements.txt
 ```
 
+Jika mengalami error saat instalasi dependencies, coba install satu per satu:
+```bash
+pip install numpy
+pip install scikit-learn
+```
+
+Jika masih error, coba dengan versi spesifik:
+```bash
+pip install numpy==1.24.3
+pip install scikit-learn==1.3.0
+```
+
+Jika mengalami error "Microsoft Visual C++ 14.0 or greater is required":
+1. Download Visual Studio Build Tools dari [sini](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
+2. Install dengan pilihan "Desktop development with C++"
+3. Restart komputer
+4. Coba install dependencies lagi
+
 3. Jalankan program
 ```bash
 python main.py
@@ -134,10 +152,40 @@ Project ini dilisensikan di bawah [MIT License](LICENSE)
 
 ## Troubleshooting
 
-Jika menemui error:
+### Untuk PC/Windows
+1. Error "Microsoft Visual C++ 14.0 or greater is required":
+   - Install Visual Studio Build Tools
+   - Pilih workload "Desktop development with C++"
+   - Restart komputer
+   - Coba install ulang dependencies
+
+2. Error saat install scikit-learn:
+   ```bash
+   pip install --only-binary :all: scikit-learn
+   ```
+   atau
+   ```bash
+   pip install scikit-learn --no-cache-dir
+   ```
+
+3. Error dengan NumPy:
+   ```bash
+   pip install numpy --upgrade
+   ```
+   atau versi spesifik:
+   ```bash
+   pip install numpy==1.24.3
+   ```
+
+4. Error "Python is not recognized":
+   - Pastikan Python sudah diinstall
+   - Tambahkan Python ke PATH sistem
+   - Restart command prompt/terminal
+
+### Untuk Termux
 1. Pastikan Python dan pip terinstall dengan benar
 2. Cek versi dependencies di requirements.txt
-3. Untuk Termux, pastikan package sudah diupdate
+3. Pastikan package sudah diupdate
 4. Jika ada error specific, buat issue di repository
 
 ## Update Log
