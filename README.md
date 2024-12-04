@@ -25,8 +25,8 @@ Program operasi matriks dengan implementasi AI untuk analisis pola dan clusterin
 
 1. Clone repository ini
 ```bash
-git clone https://github.com/[username]/matrix-operations.git
-cd matrix-operations
+git clone https://github.com/nbl29/Matrix_V2.git
+cd Matrix_V2
 ```
 
 2. Install dependencies
@@ -53,8 +53,8 @@ pkg install python pip
 
 3. Clone repository
 ```bash
-git clone https://github.com/[username]/matrix-operations.git
-cd matrix-operations
+git clone https://github.com/nbl29/Matrix_V2.git
+cd Matrix_V2
 ```
 
 4. Install dependencies
@@ -93,7 +93,7 @@ python main.py
 ## Struktur Project
 
 ```
-matrix-operations/
+Matrix_V2/
 │
 ├── main.py                 # File utama untuk menjalankan program
 ├── matrix_operations.py    # Implementasi kelas dan fungsi
@@ -124,7 +124,7 @@ Project ini dilisensikan di bawah [MIT License](LICENSE)
 
 ## Author
 
-Nabil Ganteng
+[nbl29](https://github.com/nbl29)
 
 ## Catatan
 
